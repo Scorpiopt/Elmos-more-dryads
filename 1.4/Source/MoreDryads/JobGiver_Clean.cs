@@ -26,7 +26,11 @@ namespace MoreDryads
 			{
 				return false;
 			}
-			if (!pawn.CanReserve(t, 1, -1, null))
+            if (!filth.Map.areaManager.Home[filth.Position])
+            {
+                return false;
+            }
+            if (!pawn.CanReserve(t, 1, -1, null))
 			{
 				return false;
 			}
@@ -41,7 +45,7 @@ namespace MoreDryads
         {
 			Predicate<Thing> predicate = (Thing x) => x.def.category == ThingCategory.Filth && HasJobOnThing(pawn, x);
 			Thing t = GenClosest.ClosestThingReachable(pawn.Position, pawn.Map, ThingRequest.ForGroup(ThingRequestGroup.Filth),
-				PathEndMode.OnCell, TraverseParms.For(pawn, Danger.Some, TraverseMode.ByPawn), 100f, predicate, PotentialWorkThingsGlobal(pawn));
+				PathEndMode.OnCell, TraverseParms.For(pawn, Danger.Some, TraverseMode.ByPawn), 9999, predicate, PotentialWorkThingsGlobal(pawn));
 			if (t is null)
             {
 				return null;

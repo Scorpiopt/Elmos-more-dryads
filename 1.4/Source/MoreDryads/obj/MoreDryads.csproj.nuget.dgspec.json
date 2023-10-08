@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Elmo-s-World-More-Dryads-Adopted\\1.4\\Source\\MoreDryads\\MoreDryads.csproj": {}
+    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Elmos-more-dryads\\1.4\\Source\\MoreDryads\\MoreDryads.csproj": {}
   },
   "projects": {
-    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Elmo-s-World-More-Dryads-Adopted\\1.4\\Source\\MoreDryads\\MoreDryads.csproj": {
+    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Elmos-more-dryads\\1.4\\Source\\MoreDryads\\MoreDryads.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Elmo-s-World-More-Dryads-Adopted\\1.4\\Source\\MoreDryads\\MoreDryads.csproj",
+        "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Elmos-more-dryads\\1.4\\Source\\MoreDryads\\MoreDryads.csproj",
         "projectName": "MoreDryads",
-        "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Elmo-s-World-More-Dryads-Adopted\\1.4\\Source\\MoreDryads\\MoreDryads.csproj",
+        "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Elmos-more-dryads\\1.4\\Source\\MoreDryads\\MoreDryads.csproj",
         "packagesPath": "C:\\Users\\Vova\\.nuget\\packages\\",
-        "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Elmo-s-World-More-Dryads-Adopted\\1.4\\Source\\MoreDryads\\obj\\",
+        "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Elmos-more-dryads\\1.4\\Source\\MoreDryads\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
@@ -53,6 +53,9 @@
       },
       "runtimes": {
         "win": {
+          "#import": []
+        },
+        "win-arm64": {
           "#import": []
         },
         "win-x64": {

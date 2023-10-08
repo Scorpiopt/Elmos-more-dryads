@@ -121,20 +121,15 @@
               </subNodes>
             </li>
 
-            <li Class="ThinkNode_ChancePerHour_Constant">
-              <mtbHours>1</mtbHours>
-              <subNodes>
-                <li Class="ThinkNode_ConditionalRequireCapacities">
-                  <requiredCapacities>
-                    <li>Manipulation</li>
-                  </requiredCapacities>
-                  <subNodes>
+			<li Class="ThinkNode_ConditionalRequireCapacities">
+				<requiredCapacities>
+					<li>Manipulation</li>
+				</requiredCapacities>
+				<subNodes>
 					<li Class="MoreDryads.JobGiver_Clean">
 					</li>
-                  </subNodes>
-                </li>
-              </subNodes>
-            </li>
+				</subNodes>
+			</li>
           </subNodes>
         </li>
 

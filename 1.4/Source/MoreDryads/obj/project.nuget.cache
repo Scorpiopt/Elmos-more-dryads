@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YsS7zzos6OIqRKxU0Hj/wBTzWUmPfClobvYMP4Ho4dGv33fJdaTUwpdtZNb/M+z57MeHaaK2Cc3zzBP0zhUMDg==",
+  "dgSpecHash": "TfcFlMwdgWPGUk0vgBS10CDYgKJz0uVnR+f/DVm6mJB53dF1JADfhKioajDQdBvG50uUtv7qO+2rCPxDuwysfw==",
   "success": true,
-  "projectFilePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Elmo-s-World-More-Dryads-Adopted\\1.4\\Source\\MoreDryads\\MoreDryads.csproj",
+  "projectFilePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Elmos-more-dryads\\1.4\\Source\\MoreDryads\\MoreDryads.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Vova\\.nuget\\packages\\krafs.publicizer\\2.0.1\\krafs.publicizer.2.0.1.nupkg.sha512",
     "C:\\Users\\Vova\\.nuget\\packages\\krafs.rimworld.ref\\1.4.3514-beta\\krafs.rimworld.ref.1.4.3514-beta.nupkg.sha512",

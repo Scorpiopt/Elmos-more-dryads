@@ -48,10 +48,9 @@ namespace MoreDryads
 
 	public class CompProperties_ThingCategorySpawner : CompProperties_Spawner
 	{
-		public ThingCategoryDef category;
-
-		public StuffCategoryDef stuff;
-		public CompProperties_ThingCategorySpawner()
+		public List<ThingCategoryDef> categories;
+        public StuffCategoryDef stuff;
+        public CompProperties_ThingCategorySpawner()
 		{
 			compClass = typeof(CompSpawnerSelectFromCategory);
 		}
@@ -62,7 +61,8 @@ namespace MoreDryads
         public CompProperties_ThingCategorySpawner Props => base.props as CompProperties_ThingCategorySpawner;
 
         public ThingDef selectedThingDef;
-		public IEnumerable<ThingDef> Candidates => Props.category.DescendantThingDefs.Where(x => x.stuffProps?.categories?.Contains(Props.stuff) ?? false);
+		public IEnumerable<ThingDef> Candidates => Props.categories.SelectMany(x => x.DescendantThingDefs.Where(y => Props.stuff is null 
+		|| (y.stuffProps?.categories?.Contains(Props.stuff) ?? false)));
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
             base.PostSpawnSetup(respawningAfterLoad);
@@ -88,8 +88,8 @@ namespace MoreDryads
                     {
 						yield return new Command_Action
 						{
-							defaultLabel = "EMD.SelectSpawnThing".Translate(),
-							defaultDesc = "EMD.SelectSpawnThingDesc".Translate(),
+							defaultLabel = "MD.SelectSpawnThing".Translate(),
+							defaultDesc = "MD.SelectSpawnThingDesc".Translate(),
 							action = delegate
 							{
 								var floatList = new List<FloatMenuOption>();

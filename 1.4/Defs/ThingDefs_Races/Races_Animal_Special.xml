@@ -93,8 +93,10 @@
 		<comps>
 			<li Class="MoreDryads.CompProperties_ThingCategorySpawner">
 				<thingToSpawn>Cloth</thingToSpawn>
-				<category>Textiles</category>
-				<stuff>Fabric</stuff>
+				<categories>
+					<li>Textiles</li>
+					<li>Leathers</li>
+				</categories>
 				<spawnCount>32</spawnCount>
 				<spawnIntervalRange>120000</spawnIntervalRange>
 				<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
@@ -214,7 +216,9 @@
 			<li Class="MoreDryads.CompProperties_ThingCategorySpawner">
 				<thingToSpawn>Steel</thingToSpawn>
 				<stuff>Metallic</stuff>
-				<category>ResourcesRaw</category>
+				<categories>
+					<li>ResourcesRaw</li>
+				</categories>
 				<spawnCount>32</spawnCount>
 				<spawnIntervalRange>120000</spawnIntervalRange>
 				<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
