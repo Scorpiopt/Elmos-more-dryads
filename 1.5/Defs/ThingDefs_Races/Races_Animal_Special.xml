@@ -116,7 +116,7 @@
 					<drawSize>1.5</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Dryad_Berrymaker/Dessicated_DryadBerrymaker</texPath>
+					<texPath>Things/Pawn/Dryads/Skelly/Normal/Bloomer_Skelly</texPath>
 					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -238,7 +238,7 @@
 					<drawSize>1.5</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Dryad_Berrymaker/Dessicated_DryadBerrymaker</texPath>
+					<texPath>Things/Pawn/Dryads/Skelly/Normal/Chunker_Skelly</texPath>
 					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -467,7 +467,7 @@
 					<drawSize>1.5</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Dryad_Berrymaker/Dessicated_DryadBerrymaker</texPath>
+					<texPath>Things/Pawn/Dryads/Skelly/Normal/Slimer_Skelly</texPath>
 					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -767,11 +767,11 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Dryad_Treant/Dryad_Treant</texPath>
-					<drawSize>3.0</drawSize>
+					<drawSize>1.5</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Dryad_Berrymaker/Dessicated_DryadBerrymaker</texPath>
-					<drawSize>1.5</drawSize>
+					<texPath>Things/Pawn/Dryads/Skelly/Normal/Trent_Skelly</texPath>
+					<drawSize>1</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
