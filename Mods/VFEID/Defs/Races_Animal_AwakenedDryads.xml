@@ -1,0 +1,535 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="DryadBase">
+		<defName>EMD_Awakened_Dryad_Bloomer</defName>
+		<label>awakened bloomer dryad</label>
+		<description>A dryad caste specialized in textile production. After awakening, it's capable of producing more textiles at a faster rate.\n\nAwakened dryads have both advantages and disadvantages compared to their bound relatives. While more proficient, specialized and unshackled, they can neither morph nor receive nourishment from a queen, resulting in a very limited lifespan.</description>
+		<statBases>
+			<MoveSpeed>4</MoveSpeed>
+			<Flammability>0.7</Flammability>
+			<MeatAmount>6</MeatAmount>
+		</statBases>
+		<uiIconScale>1.25</uiIconScale>
+		<race>
+			<useMeatFrom>Dryad_Basic</useMeatFrom>
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<soundWounded>Pawn_Dryad_Woodmaker_Wounded</soundWounded>
+					<soundCall>Pawn_Dryad_Woodmaker_Call</soundCall>
+				</li>
+			</lifeStageAges>
+		</race>
+		<tools Inherit="False">
+			<li>
+				<label>front left paw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+				<armorPenetration>0.12</armorPenetration>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>280</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>front right paw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+				<armorPenetration>0.12</armorPenetration>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>280</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.9</chanceFactor>
+				<armorPenetration>0.13</armorPenetration>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>280</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>4</power>
+				<armorPenetration>0.06</armorPenetration>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<comps>
+			<li Class="MoreDryads.CompProperties_ThingCategorySpawner">
+				<thingToSpawn>Cloth</thingToSpawn>
+				<categories>
+					<li>Textiles</li>
+					<li>Leathers</li>
+				</categories>
+				<spawnCount>64</spawnCount>
+				<spawnIntervalRange>90000</spawnIntervalRange>
+				<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+				<showMessageIfOwned>true</showMessageIfOwned>
+			</li>
+
+			<li Class="AnimalBehaviours.CompProperties_DiseasesAfterPeriod">
+				<timeToApplyInTicks>7200000</timeToApplyInTicks>
+				<hediffsToApply>
+					<li>VDE_SeparationSickness</li>
+				</hediffsToApply>
+				<percentageOfMaxToReapply>0.95</percentageOfMaxToReapply>
+			</li>
+
+		</comps>
+
+	</ThingDef>
+
+	<PawnKindDef ParentName="DryadKindBase">
+		<defName>EMD_Awakened_Dryad_Bloomer</defName>
+		<label>awakened bloomer dryad</label>
+		<race>EMD_Awakened_Dryad_Bloomer</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Dryads/Awaken/Bloomer_Awaken/Bloomer_Awaken</texPath>
+					<drawSize>1.5</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Dryads/Skelly/Normal/Bloomer_Skelly</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<ThingDef ParentName="DryadBase">
+		<defName>EMD_Awakened_Dryad_Chunker</defName>
+		<label>awakened chunker dryad</label>
+		<description>A dryad caste specialized in ore production. Together with its Gauranlen tree, this dryad can generate ore on an ongoing basis. After awakening, it's able to produce more metals at a faster rate. \n\nAwakened dryads have both advantages and disadvantages compared to their bound relatives. While more proficient, specialized and unshackled, they can neither morph nor receive nourishment from a queen, resulting in a very limited lifespan.</description>
+		<statBases>
+			<MoveSpeed>3</MoveSpeed>
+			<Flammability>0.7</Flammability>
+			<MeatAmount>6</MeatAmount>
+		</statBases>
+		<uiIconScale>1.25</uiIconScale>
+		<race>
+			<useMeatFrom>Dryad_Basic</useMeatFrom>
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<soundWounded>Pawn_Dryad_Woodmaker_Wounded</soundWounded>
+					<soundCall>Pawn_Dryad_Woodmaker_Call</soundCall>
+				</li>
+			</lifeStageAges>
+		</race>
+		<tools Inherit="False">
+			<li>
+				<label>front left paw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+				<armorPenetration>0.12</armorPenetration>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>280</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>front right paw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+				<armorPenetration>0.12</armorPenetration>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>280</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.9</chanceFactor>
+				<armorPenetration>0.13</armorPenetration>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>280</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>4</power>
+				<armorPenetration>0.06</armorPenetration>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<comps>
+			<li Class="MoreDryads.CompProperties_ThingCategorySpawner">
+				<thingToSpawn>Steel</thingToSpawn>
+				<stuff>Metallic</stuff>
+				<categories>
+					<li>ResourcesRaw</li>
+				</categories>
+				<spawnCount>64</spawnCount>
+				<spawnIntervalRange>90000</spawnIntervalRange>
+				<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+				<showMessageIfOwned>true</showMessageIfOwned>
+			</li>
+
+			<li Class="AnimalBehaviours.CompProperties_DiseasesAfterPeriod">
+				<timeToApplyInTicks>7200000</timeToApplyInTicks>
+				<hediffsToApply>
+					<li>VDE_SeparationSickness</li>
+				</hediffsToApply>
+				<percentageOfMaxToReapply>0.95</percentageOfMaxToReapply>
+			</li>
+
+		</comps>
+	</ThingDef>
+
+	<PawnKindDef ParentName="DryadKindBase">
+		<defName>EMD_Awakened_Dryad_Chunker</defName>
+		<label>awakened chunker dryad</label>
+		<race>EMD_Awakened_Dryad_Chunker</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Dryads/Awaken/Chunker_Awaken/Chunker_Awaken</texPath>
+					<drawSize>1.5</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Dryads/Skelly/Normal/Chunker_Skelly</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<ThingDef ParentName="DryadBase">
+		<defName>EMD_Awakened_Dryad_Slimer</defName>
+		<label>awakened slimer dryad</label>
+		<description>A dryad caste specialized in filth disposal. Under human influence, it can help keep areas clean, and after awakening, it can do so much faster as well as recycle small amounts of metals.\n\nAwakened dryads have both advantages and disadvantages compared to their bound relatives. While more proficient, specialized and unshackled, they can neither morph nor receive nourishment from a queen, resulting in a very limited lifespan.</description>
+		<statBases>
+			<MoveSpeed>5</MoveSpeed>
+			<Flammability>0.7</Flammability>
+			<MeatAmount>4</MeatAmount>
+		</statBases>
+
+		<comps>
+			<li Class="AnimalBehaviours.CompProperties_DiseasesAfterPeriod">
+				<timeToApplyInTicks>7200000</timeToApplyInTicks>
+				<hediffsToApply>
+					<li>VDE_SeparationSickness</li>
+				</hediffsToApply>
+				<percentageOfMaxToReapply>0.95</percentageOfMaxToReapply>
+			</li>
+
+			<li Class="MoreDryads.CompProperties_ThingCategorySpawner">
+				<thingToSpawn>Steel</thingToSpawn>
+				<stuff>Metallic</stuff>
+				<categories>
+					<li>ResourcesRaw</li>
+				</categories>
+				<spawnCount>32</spawnCount>
+				<spawnIntervalRange>120000</spawnIntervalRange>
+				<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+				<showMessageIfOwned>true</showMessageIfOwned>
+			</li>
+
+		</comps>
+
+		<uiIconScale>1.25</uiIconScale>
+		<race>
+			<useMeatFrom>Dryad_Basic</useMeatFrom>
+			<thinkTreeMain>EMD_DryadCleaner</thinkTreeMain>
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<soundWounded>Pawn_Dryad_Woodmaker_Wounded</soundWounded>
+					<soundCall>Pawn_Dryad_Woodmaker_Call</soundCall>
+				</li>
+			</lifeStageAges>
+			<disableAreaControl>false</disableAreaControl>
+		</race>
+		<tools Inherit="False">
+			<li>
+				<label>front left paw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+				<armorPenetration>0.12</armorPenetration>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>280</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>front right paw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+				<armorPenetration>0.12</armorPenetration>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>280</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.9</chanceFactor>
+				<armorPenetration>0.13</armorPenetration>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>280</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>4</power>
+				<armorPenetration>0.06</armorPenetration>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<PawnKindDef ParentName="DryadKindBase">
+		<defName>EMD_Awakened_Dryad_Slimer</defName>
+		<label>awakened slimer dryad</label>
+		<race>EMD_Awakened_Dryad_Slimer</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Dryads/Awaken/Slimer_Awaken/Slimer_Awaken</texPath>
+					<drawSize>1.5</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Dryads/Skelly/Normal/Slimer_Skelly</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<ThingDef ParentName="DryadBase">
+		<defName>EMD_Awakened_Dryad_Treant</defName>
+		<label>awakened treant dryad</label>
+		<description>A dryad caste specialized in being a terrifying force amongst all dryad castes. It is an embodiment of the tree itself in ways. Armed with sharp roots, thick bark, and a paralyzing glare, the Treant is unmatched. An awakened treant is even stronger, its bark hard enough to stop blades and bullets, and its root-like pseudopods moving much faster than its smaller counterpart. \n\nAwakened dryads have both advantages and disadvantages compared to their bound relatives. While more proficient, specialized and unshackled, they can neither morph nor receive nourishment from a queen, resulting in a very limited lifespan.</description>
+		<statBases>
+			<MoveSpeed>4</MoveSpeed>
+			<Flammability>0.7</Flammability>
+			<MeatAmount>6</MeatAmount>
+      <ArmorRating_Blunt>1.1</ArmorRating_Blunt>
+      <ArmorRating_Sharp>1.3</ArmorRating_Sharp>
+		</statBases>
+
+		<comps>
+			<li Class="AnimalBehaviours.CompProperties_DiseasesAfterPeriod">
+				<timeToApplyInTicks>7200000</timeToApplyInTicks>
+				<hediffsToApply>
+					<li>VDE_SeparationSickness</li>
+				</hediffsToApply>
+				<percentageOfMaxToReapply>0.95</percentageOfMaxToReapply>
+			</li>
+		</comps>
+
+		<uiIconScale>1.25</uiIconScale>
+		<race>
+			<useMeatFrom>Dryad_Basic</useMeatFrom>
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<soundWounded>Pawn_Dryad_Woodmaker_Wounded</soundWounded>
+					<soundCall>Pawn_Dryad_Woodmaker_Call</soundCall>
+				</li>
+			</lifeStageAges>
+      <trainability>Intermediate</trainability>
+      <trainableTags>
+        <li>Basic</li>
+        <li>Combat</li>
+      </trainableTags>
+      <untrainableTags>
+        <li>Work</li>
+        <li>Help</li>
+      </untrainableTags>
+      <baseHealthScale>2</baseHealthScale>
+
+		</race>
+		<tools Inherit="False">
+			<li>
+				<label>left root</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+				<armorPenetration>1.1</armorPenetration>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>320</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right root</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+				<armorPenetration>1.1</armorPenetration>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>320</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>maw</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>3</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.9</chanceFactor>
+				<armorPenetration>0.7</armorPenetration>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>280</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>20</power>
+				<armorPenetration>0.7</armorPenetration>
+				<cooldownTime>3</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<PawnKindDef ParentName="DryadKindBase">
+		<defName>EMD_Awakened_Dryad_Treant</defName>
+		<label>awakened treant dryad</label>
+		<race>EMD_Awakened_Dryad_Treant</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Dryads/Awaken/Trent_Awaken/Trent_Awaken</texPath>
+					<drawSize>3.0</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Dryads/Skelly/Normal/Trent_Skelly</texPath>
+					<drawSize>2.0</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+</Defs>
