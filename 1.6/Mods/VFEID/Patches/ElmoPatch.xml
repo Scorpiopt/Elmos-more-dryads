@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+
+<Operation Class="PatchOperationConditional">
+		
+		<xpath>/Defs/ThingDef[defName = "EMD_Dryad_Bloomer"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "EMD_Dryad_Bloomer"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaIdeologyExpanded_Dryads.CompProperties_PawnMerge">
+						<requiredCount>3</requiredCount>
+						<podToBuild>EMD_BloomerAwakeningCocoon</podToBuild>
+						<gizmoImage>Things/Building/UpgradeBloomer</gizmoImage>
+						<gizmoLabel>VDE_Awaken</gizmoLabel>
+						<gizmoDesc>VDE_AwakenDesc</gizmoDesc>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "EMD_Dryad_Bloomer"]/comps</xpath>
+			<value>
+				<li Class="VanillaIdeologyExpanded_Dryads.CompProperties_PawnMerge">
+					<requiredCount>3</requiredCount>
+						<podToBuild>EMD_BloomerAwakeningCocoon</podToBuild>
+						<gizmoImage>Things/Building/UpgradeBloomer</gizmoImage>
+						<gizmoLabel>VDE_Awaken</gizmoLabel>
+						<gizmoDesc>VDE_AwakenDesc</gizmoDesc>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		
+		<xpath>/Defs/ThingDef[defName = "EMD_Dryad_Chunker"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "EMD_Dryad_Chunker"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaIdeologyExpanded_Dryads.CompProperties_PawnMerge">
+						<requiredCount>3</requiredCount>
+						<podToBuild>EMD_ChunkerAwakeningCocoon</podToBuild>
+						<gizmoImage>Things/Building/UpgradeChunker</gizmoImage>
+						<gizmoLabel>VDE_Awaken</gizmoLabel>
+						<gizmoDesc>VDE_AwakenDesc</gizmoDesc>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "EMD_Dryad_Chunker"]/comps</xpath>
+			<value>
+				<li Class="VanillaIdeologyExpanded_Dryads.CompProperties_PawnMerge">
+					<requiredCount>3</requiredCount>
+						<podToBuild>EMD_ChunkerAwakeningCocoon</podToBuild>
+						<gizmoImage>Things/Building/UpgradeChunker</gizmoImage>
+						<gizmoLabel>VDE_Awaken</gizmoLabel>
+						<gizmoDesc>VDE_AwakenDesc</gizmoDesc>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		
+		<xpath>/Defs/ThingDef[defName = "EMD_Dryad_Slimer"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "EMD_Dryad_Slimer"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaIdeologyExpanded_Dryads.CompProperties_PawnMerge">
+						<requiredCount>3</requiredCount>
+						<podToBuild>EMD_SlimerAwakeningCocoon</podToBuild>
+						<gizmoImage>Things/Building/UpgradeSlimer</gizmoImage>
+						<gizmoLabel>VDE_Awaken</gizmoLabel>
+						<gizmoDesc>VDE_AwakenDesc</gizmoDesc>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "EMD_Dryad_Slimer"]/comps</xpath>
+			<value>
+				<li Class="VanillaIdeologyExpanded_Dryads.CompProperties_PawnMerge">
+					<requiredCount>3</requiredCount>
+						<podToBuild>EMD_SlimerAwakeningCocoon</podToBuild>
+						<gizmoImage>Things/Building/UpgradeSlimer</gizmoImage>
+						<gizmoLabel>VDE_Awaken</gizmoLabel>
+						<gizmoDesc>VDE_AwakenDesc</gizmoDesc>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		
+		<xpath>/Defs/ThingDef[defName = "EMD_Dryad_Treant"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "EMD_Dryad_Treant"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaIdeologyExpanded_Dryads.CompProperties_PawnMerge">
+						<requiredCount>3</requiredCount>
+						<podToBuild>EMD_TreantAwakeningCocoon</podToBuild>
+						<gizmoImage>Things/Building/UpgradeTreant</gizmoImage>
+						<gizmoLabel>VDE_Awaken</gizmoLabel>
+						<gizmoDesc>VDE_AwakenDesc</gizmoDesc>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "EMD_Dryad_Treant"]/comps</xpath>
+			<value>
+				<li Class="VanillaIdeologyExpanded_Dryads.CompProperties_PawnMerge">
+					<requiredCount>3</requiredCount>
+						<podToBuild>EMD_TreantAwakeningCocoon</podToBuild>
+						<gizmoImage>Things/Building/UpgradeTreant</gizmoImage>
+						<gizmoLabel>VDE_Awaken</gizmoLabel>
+						<gizmoDesc>VDE_AwakenDesc</gizmoDesc>
+				</li>
+			</value>
+		</match>
+	</Operation>
+
+
+</Patch>
+

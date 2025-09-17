@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef>
+		<defName>EMD_BloomerAwakeningCocoon</defName>
+		<label>bloomer awakening pod</label>
+		<thingClass>ThingWithComps</thingClass>
+		<description>An awakened dryad will emerge from this pod in one day.</description>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<altitudeLayer>Building</altitudeLayer>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/UpgradeBloomer</texPath>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>1.25</Flammability>
+		</statBases>
+		<fillPercent>0.5</fillPercent>
+		<selectable>true</selectable>
+		<comps>
+			<li Class="VanillaIdeologyExpanded_Dryads.CompProperties_SpawnAwakened">
+				<ticksToSpawn>60000</ticksToSpawn>
+				<dryadToSpawn>EMD_Awakened_Dryad_Bloomer</dryadToSpawn>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef>
+		<defName>EMD_ChunkerAwakeningCocoon</defName>
+		<label>chunker awakening pod</label>
+		<thingClass>ThingWithComps</thingClass>
+		<description>An awakened dryad will emerge from this pod in one day.</description>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<altitudeLayer>Building</altitudeLayer>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/UpgradeChunker</texPath>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>1.25</Flammability>
+		</statBases>
+		<fillPercent>0.5</fillPercent>
+		<selectable>true</selectable>
+		<comps>
+			<li Class="VanillaIdeologyExpanded_Dryads.CompProperties_SpawnAwakened">
+				<ticksToSpawn>60000</ticksToSpawn>
+				<dryadToSpawn>EMD_Awakened_Dryad_Chunker</dryadToSpawn>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef>
+		<defName>EMD_SlimerAwakeningCocoon</defName>
+		<label>slimer awakening pod</label>
+		<thingClass>ThingWithComps</thingClass>
+		<description>An awakened dryad will emerge from this pod in one day.</description>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<altitudeLayer>Building</altitudeLayer>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/UpgradeSlimer</texPath>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>1.25</Flammability>
+		</statBases>
+		<fillPercent>0.5</fillPercent>
+		<selectable>true</selectable>
+		<comps>
+			<li Class="VanillaIdeologyExpanded_Dryads.CompProperties_SpawnAwakened">
+				<ticksToSpawn>60000</ticksToSpawn>
+				<dryadToSpawn>EMD_Awakened_Dryad_Slimer</dryadToSpawn>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef>
+		<defName>EMD_TreantAwakeningCocoon</defName>
+		<label>treant awakening pod</label>
+		<thingClass>ThingWithComps</thingClass>
+		<description>An awakened dryad will emerge from this pod in one day.</description>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<altitudeLayer>Building</altitudeLayer>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/UpgradeTreant</texPath>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>1.25</Flammability>
+		</statBases>
+		<fillPercent>0.5</fillPercent>
+		<selectable>true</selectable>
+		<comps>
+			<li Class="VanillaIdeologyExpanded_Dryads.CompProperties_SpawnAwakened">
+				<ticksToSpawn>60000</ticksToSpawn>
+				<dryadToSpawn>EMD_Awakened_Dryad_Treant</dryadToSpawn>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

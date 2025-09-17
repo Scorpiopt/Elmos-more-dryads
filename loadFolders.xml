@@ -5,11 +5,11 @@
 	<v1.5>
         <li>/</li>
         <li>1.5</li>		
-		<li IfModActive="vanillaexpanded.ideo.dryads">Mods/VFEID</li>
+		<li IfModActive="vanillaexpanded.ideo.dryads">1.5/Mods/VFEID</li>
 	</v1.5>
 	<v1.6>
         <li>/</li>
         <li>1.6</li>		
-		<li IfModActive="vanillaexpanded.ideo.dryads">Mods/VFEID</li>
+		<li IfModActive="vanillaexpanded.ideo.dryads">1.6/Mods/VFEID</li>
 	</v1.6>
 </loadFolders>
