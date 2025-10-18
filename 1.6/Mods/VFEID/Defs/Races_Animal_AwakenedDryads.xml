@@ -119,6 +119,9 @@
 		<defName>EMD_Awakened_Dryad_Bloomer</defName>
 		<label>awakened bloomer dryad</label>
 		<race>EMD_Awakened_Dryad_Bloomer</race>
+		<canArriveManhunter>false</canArriveManhunter>
+		<combatPower>40</combatPower>
+		<ecoSystemWeight>1.1</ecoSystemWeight>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -250,6 +253,9 @@
 		<defName>EMD_Awakened_Dryad_Chunker</defName>
 		<label>awakened chunker dryad</label>
 		<race>EMD_Awakened_Dryad_Chunker</race>
+		<canArriveManhunter>false</canArriveManhunter>
+		<combatPower>40</combatPower>
+		<ecoSystemWeight>1.1</ecoSystemWeight>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -385,6 +391,9 @@
 		<defName>EMD_Awakened_Dryad_Slimer</defName>
 		<label>awakened slimer dryad</label>
 		<race>EMD_Awakened_Dryad_Slimer</race>
+		<canArriveManhunter>false</canArriveManhunter>
+		<combatPower>40</combatPower>
+		<ecoSystemWeight>1.1</ecoSystemWeight>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -518,6 +527,9 @@
 		<defName>EMD_Awakened_Dryad_Treant</defName>
 		<label>awakened treant dryad</label>
 		<race>EMD_Awakened_Dryad_Treant</race>
+		<canArriveManhunter>false</canArriveManhunter>
+		<combatPower>40</combatPower>
+		<ecoSystemWeight>1.1</ecoSystemWeight>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
