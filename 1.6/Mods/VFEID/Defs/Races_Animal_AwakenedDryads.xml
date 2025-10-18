@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="AnimalKindBase">
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>EMD_Awakened_Dryad_Bloomer</defName>
 		<label>awakened bloomer dryad</label>
 		<description>A dryad caste specialized in textile production. After awakening, it's capable of producing more textiles at a faster rate.\n\nAwakened dryads have both advantages and disadvantages compared to their bound relatives. While more proficient, specialized and unshackled, they can neither morph nor receive nourishment from a queen, resulting in a very limited lifespan.</description>
@@ -115,7 +115,7 @@
 
 	</ThingDef>
 
-	<PawnKindDef ParentName="AnimalThingBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>EMD_Awakened_Dryad_Bloomer</defName>
 		<label>awakened bloomer dryad</label>
 		<race>EMD_Awakened_Dryad_Bloomer</race>
@@ -133,7 +133,7 @@
 		</lifeStages>
 	</PawnKindDef>
 
-	<ThingDef ParentName="AnimalKindBase">
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>EMD_Awakened_Dryad_Chunker</defName>
 		<label>awakened chunker dryad</label>
 		<description>A dryad caste specialized in ore production. Together with its Gauranlen tree, this dryad can generate ore on an ongoing basis. After awakening, it's able to produce more metals at a faster rate. \n\nAwakened dryads have both advantages and disadvantages compared to their bound relatives. While more proficient, specialized and unshackled, they can neither morph nor receive nourishment from a queen, resulting in a very limited lifespan.</description>
@@ -246,7 +246,7 @@
 		</comps>
 	</ThingDef>
 
-	<PawnKindDef ParentName="AnimalThingBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>EMD_Awakened_Dryad_Chunker</defName>
 		<label>awakened chunker dryad</label>
 		<race>EMD_Awakened_Dryad_Chunker</race>
@@ -264,7 +264,7 @@
 		</lifeStages>
 	</PawnKindDef>
 
-	<ThingDef ParentName="AnimalKindBase">
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>EMD_Awakened_Dryad_Slimer</defName>
 		<label>awakened slimer dryad</label>
 		<description>A dryad caste specialized in filth disposal. Under human influence, it can help keep areas clean, and after awakening, it can do so much faster as well as recycle small amounts of metals.\n\nAwakened dryads have both advantages and disadvantages compared to their bound relatives. While more proficient, specialized and unshackled, they can neither morph nor receive nourishment from a queen, resulting in a very limited lifespan.</description>
@@ -381,7 +381,7 @@
 		</tools>
 	</ThingDef>
 
-	<PawnKindDef ParentName="AnimalThingBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>EMD_Awakened_Dryad_Slimer</defName>
 		<label>awakened slimer dryad</label>
 		<race>EMD_Awakened_Dryad_Slimer</race>
@@ -399,7 +399,7 @@
 		</lifeStages>
 	</PawnKindDef>
 
-	<ThingDef ParentName="AnimalKindBase">
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>EMD_Awakened_Dryad_Treant</defName>
 		<label>awakened treant dryad</label>
 		<description>A dryad caste specialized in being a terrifying force amongst all dryad castes. It is an embodiment of the tree itself in ways. Armed with sharp roots, thick bark, and a paralyzing glare, the Treant is unmatched. An awakened treant is even stronger, its bark hard enough to stop blades and bullets, and its root-like pseudopods moving much faster than its smaller counterpart. \n\nAwakened dryads have both advantages and disadvantages compared to their bound relatives. While more proficient, specialized and unshackled, they can neither morph nor receive nourishment from a queen, resulting in a very limited lifespan.</description>
@@ -514,7 +514,7 @@
 		</tools>
 	</ThingDef>
 
-	<PawnKindDef ParentName="AnimalThingBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>EMD_Awakened_Dryad_Treant</defName>
 		<label>awakened treant dryad</label>
 		<race>EMD_Awakened_Dryad_Treant</race>
